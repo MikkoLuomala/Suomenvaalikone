@@ -67,3 +67,10 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+
+# Git help
+## Create and push commit to new branch
+git add .
+git commit -m "<your commit message>"
+git push origin <current-branch-name>:<new-branch-name>
