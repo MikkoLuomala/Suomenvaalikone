@@ -1,7 +1,10 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-
+  server: {
+    host: '0.0.0.0', // default: localhost
+    port: 3000,
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -36,7 +39,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    //'@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

@@ -71,6 +71,8 @@ More information about the usage of this directory in [the documentation](https:
 
 # Git help
 ## Create and push commit to new branch
+```bash
 git add .
 git commit -m "<your commit message>"
 git push origin <current-branch-name>:<new-branch-name>
+```
