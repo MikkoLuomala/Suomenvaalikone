@@ -25,8 +25,27 @@ export default {
     ]
   },
 
+  router: {
+    linkActiveClass: 'active-link',
+    extendRoutes(routes, resolve) {
+      routes.push(
+        {
+          name: 'kysely',
+          path: '/',
+          component: resolve(__dirname, 'pages/index.vue')
+        },
+        {
+          name: 'tietosuojaseloste',
+          path: '/gdpr',
+          component: resolve(__dirname, 'pages/gdpr.vue')
+        }
+      )
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,13 +59,47 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     //'@nuxtjs/tailwindcss',
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxt/components'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content',
+    '@nuxtjs/markdownit',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+        'tailwindcss': {},
+        'autoprefixer': {},
+        'postcss-import': {},
+        'postcss-nested': {},
+        'postcss-responsive-type': {},
+        'postcss-hexrgba': {}
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: {
+          grid: true
+        }
+      }
+    },
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          pure_funcs: ['throw', 'TypeError']
+        }
+      }
+    },
+    publicPath: '/suomenvaalikone'
   }
 }

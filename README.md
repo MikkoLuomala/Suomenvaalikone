@@ -76,3 +76,6 @@ git add .
 git commit -m "<your commit message>"
 git push origin <current-branch-name>:<new-branch-name>
 ```
+
+# TODO
+Update to Nuxt3 and remove legacy openssl support.
