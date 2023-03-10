@@ -20,7 +20,7 @@ Tietojen antaminen vaalikoneeseen perustuu vapaaehtoisuuteen eikä mitään Euro
 Rekisterissä säilytetään eduskuntavaalien 2023 aika kerättyjä anonyymeja vastauksia, joiden avulla tehdään politiikkaa Suomessa ja kartoitetaan Suomen poliittista tahtotilaa.
 
 ## **6. SÄÄNNÖNMUKAISET TIETOLÄHTEET**
-Tietoja kerätään ainoastaan suomenvaalikone.fi sivustolla olevan Google LLC formin kautta. Muita aineistoja tai tietoja yhdistetä vastauksiin.
+Tietoja kerätään ainoastaan suomenvaalikone.fi sivustolla olevan Google LLC formin kautta. Muita aineistoja tai tietoja ei yhdistetä vastauksiin.
 
 ## **7. TIETOJEN SÄÄNNÖNMUKAISET LUOVUTUKSET**
 Google LLC formin palveluun syntyviä tuloksia ei luovutettu muille tahoille. Kyselyn päättyä tulokset julkaistaan suomenvaalikone.fi domain sivustolla, jossa ne ovat jaettavissa julkisesti kaikille. Henkilötietoja ei kerätä tai julkaista.
