@@ -10,7 +10,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'vaalikone-ek-2023-2',
+    title: 'vaalikone-ek-2023',
     htmlAttrs: {
       lang: 'en'
     },
